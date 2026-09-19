@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Machine learning models
+*.keras
+*.h5
+*.ckpt
+
+# Datasets
+data/
+dataset/
+datasets/
+chest_xray/
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Google Colab
+*.pyc
