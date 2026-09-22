@@ -138,3 +138,34 @@ The research paper proposes an integrated healthcare system using CNN, HierbaNet
 This GitHub project implements the **CNN-based chest X-ray classification component** as an academic prototype. HierbaNetV1, LSTM-based patient-record analysis, feature fusion, and the complete cloud dashboard are proposed as future extensions.
 
 > **Note:** The performance values reported in the research paper are not presented as the results of this prototype.
+
+## Working
+
+The system works in the following stages:
+
+1. **Dataset Collection**  
+   Chest X-ray images are obtained from the Chest X-ray Pneumonia dataset.
+
+2. **Image Preprocessing**  
+   The X-ray images are resized to 224 × 224 pixels and normalized so that the pixel values are scaled between 0 and 1.
+
+3. **CNN Feature Extraction**  
+   The Convolutional Neural Network (CNN) extracts important visual features from the chest X-ray images using convolution and max-pooling layers.
+
+4. **Classification**  
+   The extracted features are passed through fully connected layers. A sigmoid output layer classifies the X-ray as either **NORMAL** or **PNEUMONIA**.
+
+5. **Model Training**  
+   The CNN is trained using the Adam optimizer and binary cross-entropy loss.
+
+6. **Model Evaluation**  
+   The trained model is evaluated using accuracy, classification report, and confusion matrix.
+
+7. **Prediction**  
+   A new chest X-ray image is given to the trained model. The system predicts the class and displays the prediction confidence.
+
+### Working Flow
+
+**Chest X-ray → Preprocessing → CNN Feature Extraction → Classification → Prediction → Result**
+
+> **Prototype scope:** This implementation demonstrates the CNN-based chest X-ray classification component of the research paper. The complete proposed system additionally includes HierbaNetV1, LSTM-based patient-data analysis, feature fusion, and cloud-based components.
