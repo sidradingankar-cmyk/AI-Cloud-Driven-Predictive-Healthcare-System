@@ -1,69 +1,110 @@
 # Cloud-Driven Predictive Healthcare System
 
-## Project Overview
+## Student Project
 
-This project is an implementation component of a proposed Cloud-Driven Predictive Healthcare System for disease prediction using medical imaging and patient health information.
+**Student Name:** Sidra Dingankar  
+**Roll Number:** 5024118  
+**Department:** Information Technology (IT)
 
-The research system combines deep learning techniques for analyzing chest X-ray images and sequential patient health records. The proposed architecture uses Convolutional Neural Networks (CNN), HierbaNetV1, and Long Short-Term Memory (LSTM) networks.
+---
 
-For this implementation, the focus is on developing and evaluating the CNN-based chest X-ray classification component.
+## 1. Project Overview
 
-## Objectives
+This project is an academic implementation based on the research paper:
 
-The main objectives of this project are:
+**"Cloud-Driven Predictive Healthcare System using CNN, HierbaNetV1, and LSTM for Chest X-ray and Patient Data Analysis"**
 
-- Process and classify chest X-ray images using deep learning.
-- Develop a CNN model for binary chest X-ray classification.
-- Preprocess medical images into a suitable format for model training.
-- Train and evaluate the CNN model using accuracy and classification metrics.
-- Demonstrate how the CNN component can form part of a larger cloud-based healthcare prediction system.
-- Provide a foundation for future integration with temporal patient-record analysis using LSTM.
+The proposed research system uses deep learning and cloud computing to analyze chest X-ray images together with sequential patient health information.
 
-## Research System
+The research architecture combines:
 
-The proposed research system consists of several major components:
+- Convolutional Neural Network (CNN)
+- HierbaNetV1
+- Long Short-Term Memory (LSTM)
+- Feature fusion
+- Binary disease prediction
+- Cloud-based storage and dashboard
 
-1. Chest X-ray image preprocessing
-2. CNN-based spatial feature extraction
-3. HierbaNetV1 for multi-scale feature extraction and attention
-4. LSTM-based temporal patient-record analysis
-5. Feature fusion
-6. Disease prediction
-7. Confidence/risk estimation
-8. Cloud-based storage and dashboard visualization
+The prototype implemented in this repository focuses on the **CNN-based chest X-ray classification component** of the proposed system.
 
-The complete research architecture is broader than the prototype implemented in this repository.
+### Prototype Scope
 
-## Implementation Scope
-
-This repository implements the CNN component of the proposed system.
-
-The implemented model performs binary classification of chest X-ray images into:
+The implemented prototype classifies chest X-ray images into:
 
 - NORMAL
 - PNEUMONIA
 
-The implementation was developed using Google Colab and TensorFlow/Keras.
+The complete research architecture described in the paper additionally includes HierbaNetV1, LSTM-based patient-record analysis, multimodal feature fusion, cloud storage, and dashboard visualization.
 
-## Technologies Used
+---
 
-- Python
-- TensorFlow
-- Keras
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Pillow
-- Google Colab
-- Kaggle dataset
+# 2. Problem Statement
 
-## Dataset
+Healthcare systems generate large amounts of medical imaging and patient information. Traditional analysis can be time-consuming and may make it difficult to combine different types of medical data.
 
-The implementation uses the Chest X-Ray Pneumonia dataset available through Kaggle.
+The research paper proposes a cloud-driven predictive healthcare framework that combines chest X-ray analysis with sequential patient data.
 
-The dataset contains chest X-ray images organized into NORMAL and PNEUMONIA classes.
+The proposed system aims to:
 
-The images are resized to:
+- Extract spatial features from chest X-ray images.
+- Extract multi-scale image information using HierbaNetV1.
+- Analyze temporal patient information using LSTM.
+- Fuse image and temporal features.
+- Generate disease prediction scores.
+- Provide scalable cloud-based processing and visualization.
+
+---
+
+# 3. Objectives
+
+The objectives of this implementation are:
+
+1. Process chest X-ray images using deep learning.
+2. Preprocess images into a standard input format.
+3. Develop a CNN-based binary image classification model.
+4. Train the model using chest X-ray data.
+5. Evaluate the model using classification metrics.
+6. Generate predictions for individual X-ray images.
+7. Demonstrate how the CNN component can contribute to the larger proposed healthcare system.
+
+---
+
+# 4. Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Programming language |
+| TensorFlow | Deep learning framework |
+| Keras | CNN model development |
+| NumPy | Numerical processing |
+| Matplotlib | Data visualization |
+| Scikit-learn | Model evaluation |
+| Pillow | Image processing |
+| Google Colab | Development and execution environment |
+| Kaggle | Dataset source |
+| GitHub | Version control and project documentation |
+
+---
+
+# 5. Dataset
+
+The research paper uses the NIH Chest X-ray14 dataset containing:
+
+- 112,120 frontal-view chest X-ray images
+- 30,805 distinct patients
+- 14 thoracic disease classes
+- Patient metadata such as age, gender and view position
+
+The paper states that the images were resized to 224 × 224 pixels for model training.
+
+### Prototype Dataset
+
+The prototype implementation uses the Chest X-Ray Pneumonia dataset for binary classification:
+
+- NORMAL
+- PNEUMONIA
+
+Images are resized to:
 
 ```text
 224 × 224 pixels
