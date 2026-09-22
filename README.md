@@ -108,3 +108,33 @@ Images are resized to:
 
 ```text
 224 × 224 pixels
+
+## Reference Paper
+
+The implementation in this repository is based on the following research paper:
+
+**Vallu, V. R., Pulakhandam, W., Chaluvadi, A., & Hemnath, R. (2024).**
+
+**Cloud-Driven Predictive Healthcare System using CNN, HierbaNetV1, and LSTM for Chest X-ray and Patient Data Analysis.**
+
+*International Journal of Multidisciplinary and Current Research, Volume 12, July/August 2024.*
+
+**DOI:** https://doi.org/10.14741/ijmcr/v.12.4.6
+
+### Paper Details
+
+- Authors: Visrutatma Rao Vallu, Winner Pulakhandam, Archana Chaluvadi, R. Hemnath
+- Journal: International Journal of Multidisciplinary and Current Research
+- Volume: 12
+- Issue: July/August 2024
+- Received: 25 July 2024
+- Accepted: 9 August 2024
+- Available online: 11 August 2024
+
+### Relation to This Implementation
+
+The research paper proposes an integrated healthcare system using CNN, HierbaNetV1, LSTM, feature fusion, and cloud-based healthcare infrastructure.
+
+This GitHub project implements the **CNN-based chest X-ray classification component** as an academic prototype. HierbaNetV1, LSTM-based patient-record analysis, feature fusion, and the complete cloud dashboard are proposed as future extensions.
+
+> **Note:** The performance values reported in the research paper are not presented as the results of this prototype.
